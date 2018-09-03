@@ -16,8 +16,8 @@ def reformat_languages(languages)
       if reformatted_languages.keys.include?(language_name)
         reformatted_languages[:language_name][:style] << language_type
       else
-        
-        reformatted_languages[language_name][:style] = [language_type]
+        reformatted_languages[:ruby] = { type: language_details[:type], style: [language_type]
+        [:style] = [language_type]
         binding.pry
       end
     end
